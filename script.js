@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('https://rental-costs-backend.onrender.com') 
+    fetch('https://rental-costs-backend.onrender.com/api/costs') 
         .then(response => response.json())
         .then(data => {
             const tableBody = document.getElementById('costs-table-body');
